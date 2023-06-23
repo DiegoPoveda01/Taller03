@@ -5,13 +5,12 @@ import java.util.List;
 public class Principal {
     public static void main(String[] args) {
         Tienda tienda = inicializar();
-        Tienda(tienda);
+        ejecutarTienda(tienda);
     }
 
     public static Tienda inicializar() {
         Tienda tienda = new Tienda("Anibal Pinto 2828", "Notebooks, tablets y computadores");
 
-        // Agregar dispositivos
         Dispositivo notebook = new Notebook("HP", "16GB", "1 TB", "Intel i3", "A3", "2019", "350000", "2 unidades", "98", "1366x768", "Teclado 60%, Sin teclado númerico", "2600mAh");
         Dispositivo tablet = new Tablet("ASUS", "8GB", "50GB", "Snapdragon X", "X3", "2020", "650000", "1 unidad", "99", "1280x720");
         Pantalla pantalla = new Pantalla("HP", "230");
@@ -21,20 +20,19 @@ public class Principal {
         tienda.agregarDispositivo(tablet);
         tienda.agregarDispositivo(computador);
 
-        // Agregar cliente
         Cliente cliente = new Cliente("Diego", "Poveda", "d.poveda01@ufromail.cl", "989988", "Casado", "Lautaro", tienda);
         tienda.agregarCliente(cliente);
 
         return tienda;
     }
 
-    public static void Tienda(Tienda tienda) {
+    public static void ejecutarTienda(Tienda tienda) {
         String emailCliente = "d.poveda01@ufromail.cl";
-        Cliente clienteEncontrado = tienda.buscarCliente(emailCliente);
+        Cliente clienteEncontrado = tienda.iniciarSesion(emailCliente);
         if (clienteEncontrado != null) {
-            System.out.println("Cliente encontrado: " + clienteEncontrado.getNombre());
+            System.out.println("Cliente: " + clienteEncontrado.getNombre());
         } else {
-            System.out.println("Cliente no encontrado.");
+            System.out.println("El cliente no está registrado o los datos son incorrectos.");
         }
 
         String idDispositivo = "98";

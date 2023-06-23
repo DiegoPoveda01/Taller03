@@ -93,4 +93,15 @@ public class Tienda {
 	public void agregarDispositivo(Dispositivo dispositivo) {
 		dispositivos.add(dispositivo);
 	}
+	public Cliente iniciarSesion(String email) {
+		for (Cliente cliente : clientes) {
+			if (cliente.getEmail().equalsIgnoreCase(email)) {
+				System.out.println("Inicio de sesión exitoso.");
+				return cliente;
+			}
+		}
+
+		System.out.println("El cliente no está registrado.");
+		return null;
+	}
 }
