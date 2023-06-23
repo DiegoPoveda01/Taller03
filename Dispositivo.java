@@ -10,7 +10,7 @@ public abstract class Dispositivo {
 	protected String precio;
 	protected String stock;
 	protected String idDispositivo;
-   public Dispositivo(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock){
+   public Dispositivo(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock, String idDispositivo){
 	   this.marca = marca;
 	   this.memoriaRam = memoriaRam;
 	   this.memoriaAlmacenamiento = memoriaAlmacenamiento;
@@ -19,6 +19,7 @@ public abstract class Dispositivo {
 	   this.añoFabricacion = añoFabricacion;
 	   this.precio = precio;
 	   this.stock = stock;
+	   this.idDispositivo = idDispositivo;
    }
 	public String getMarca() {
 		return this.marca;

@@ -5,8 +5,8 @@ public class Notebook extends Dispositivo {
 	private String tipoTeclado;
 	private String bateria;
 
-	public Notebook(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock, String resolucionPantalla, String tipoTeclado, String bateria) {
-		super(marca, memoriaRam, memoriaAlmacenamiento, procesador, modelo, añoFabricacion, precio, stock);
+	public Notebook(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock, String idDispositivo, String resolucionPantalla, String tipoTeclado, String bateria) {
+		super(marca, memoriaRam, memoriaAlmacenamiento, procesador, modelo, añoFabricacion, precio, stock, idDispositivo);
 		this.resolucionPantalla = resolucionPantalla;
 		this.tipoTeclado = tipoTeclado;
 		this.bateria = bateria;

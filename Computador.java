@@ -6,9 +6,10 @@ public class Computador extends Dispositivo {
 	private String chasis;
 	public Pantalla pantalla;
 
-	public Computador(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock, String tarjetaVideo, String fuentePoder, String chasis, Pantalla pantalla) {
-		super(marca, memoriaRam, memoriaAlmacenamiento, procesador, modelo, añoFabricacion, precio, stock);
+	public Computador(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock, String idDispositivo, String tarjetaVideo, String fuentePoder, String chasis, Pantalla pantalla) {
+		super(marca, memoriaRam, memoriaAlmacenamiento, procesador, modelo, añoFabricacion, precio, stock, idDispositivo);
 		this.tarjetaVideo = tarjetaVideo;
+		this.fuentePoder = fuentePoder;
 		this.chasis = chasis;
 		this.pantalla = pantalla;
 	}

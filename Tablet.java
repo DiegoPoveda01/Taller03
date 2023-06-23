@@ -6,10 +6,11 @@ public class Tablet extends Dispositivo {
 	private String resolucionPantalla;
 	private ArrayList<String> accesorios;
 
-	public Tablet(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock, String resolucionPantalla) {
-		super(marca, memoriaRam, memoriaAlmacenamiento, procesador, modelo, añoFabricacion, precio, stock);
+	public Tablet(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock, String idDispositivo ,String resolucionPantalla) {
+		super(marca, memoriaRam, memoriaAlmacenamiento, procesador, modelo, añoFabricacion, precio, stock, idDispositivo);
 		this.resolucionPantalla = resolucionPantalla;
 	}
+
 
 	public String getResolucionPantalla() {
 		return this.resolucionPantalla;
