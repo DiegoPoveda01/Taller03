@@ -1,10 +1,12 @@
+package org.example;
+
 public abstract class Dispositivo {
 	protected String marca;
 	protected String memoriaRam;
 	protected String memoriaAlmacenamiento;
 	protected String procesador;
 	protected String modelo;
-	protected String añoFabricacion;
+	protected String aÃ±oFabricacion;
 	protected String precio;
 	protected String stock;
 
@@ -48,12 +50,12 @@ public abstract class Dispositivo {
 		this.modelo = modelo;
 	}
 
-	public String getAñoFabricacion() {
-		return this.añoFabricacion;
+	public String getAÃ±oFabricacion() {
+		return this.aÃ±oFabricacion;
 	}
 
-	public void setAñoFabricacion(String añoFabricacion) {
-		this.añoFabricacion = añoFabricacion;
+	public void setAÃ±oFabricacion(String aÃ±oFabricacion) {
+		this.aÃ±oFabricacion = aÃ±oFabricacion;
 	}
 
 	public String getPrecio() {

@@ -1,3 +1,5 @@
+package org.example;
+
 public class Computador extends Dispositivo {
 	private String tarjetaVideo;
 	private String fuentePoder;

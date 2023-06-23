@@ -1,7 +1,9 @@
+package org.example;
+
 public class Pantalla {
 	private String marca;
 	private String modelo;
-	private int año;
+	private int aÃ±o;
 
 	public String getMarca() {
 		return this.marca;
@@ -19,11 +21,11 @@ public class Pantalla {
 		this.modelo = modelo;
 	}
 
-	public int getAño() {
-		return this.año;
+	public int getAÃ±o() {
+		return this.aÃ±o;
 	}
 
-	public void setAño(int año) {
-		this.año = año;
+	public void setAÃ±o(int aÃ±o) {
+		this.aÃ±o = aÃ±o;
 	}
 }

@@ -1,3 +1,7 @@
+package org.example;
+
+import java.util.ArrayList;
+
 public class Tablet extends Dispositivo {
 	private String resolucionPantalla;
 	private ArrayList<String> accesorios;
