@@ -54,11 +54,20 @@ public class Tienda {
 	public String buscarDispositivo(String idDispositivo) {
 		for (Dispositivo dispositivo : dispositivos) {
 			if (dispositivo.getIdDispositivo().equals(idDispositivo)) {
-				return "La información del dispositivo es: " + dispositivo.getMarca()  +  dispositivo.getMemoriaRam()  +  dispositivo.getMemoriaAlmacenamiento()  +  dispositivo.getProcesador()  +  dispositivo.getProcesador()  +  dispositivo.getModelo()  +  dispositivo.getAñoFabricacion()  +  dispositivo.getPrecio()  +  dispositivo.getStock();
+				return "La información del dispositivo es: " +
+						"Marca: " + dispositivo.getMarca() + "\n" +
+						"Memoria RAM: " + dispositivo.getMemoriaRam() + "\n" +
+						"Memoria de Almacenamiento: " + dispositivo.getMemoriaAlmacenamiento() + "\n" +
+						"Procesador: " + dispositivo.getProcesador() + "\n" +
+						"Modelo: " + dispositivo.getModelo() + "\n" +
+						"Año de Fabricación: " + dispositivo.getAñoFabricacion() + "\n" +
+						"Precio: " + dispositivo.getPrecio() + "\n" +
+						"Stock: " + dispositivo.getStock();
 			}
 		}
 		return "El dispositivo no se encontró.";
 	}
+
 
 
 	public List<Dispositivo> buscarDispositivoPorMarca(String marca) {
