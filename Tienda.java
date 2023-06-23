@@ -54,7 +54,7 @@ public class Tienda {
 	public String buscarDispositivo(String idDispositivo) {
 		for (Dispositivo dispositivo : dispositivos) {
 			if (dispositivo.getIdDispositivo().equals(idDispositivo)) {
-				return "La información del dispositivo es: " +
+				return "La información del dispositivo es: " + "\n" +
 						"Marca: " + dispositivo.getMarca() + "\n" +
 						"Memoria RAM: " + dispositivo.getMemoriaRam() + "\n" +
 						"Memoria de Almacenamiento: " + dispositivo.getMemoriaAlmacenamiento() + "\n" +
