@@ -9,7 +9,16 @@ public abstract class Dispositivo {
 	protected String añoFabricacion;
 	protected String precio;
 	protected String stock;
-
+   public Dispositivo(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock){
+	   this.marca = marca;
+	   this.memoriaRam = memoriaRam;
+	   this.memoriaAlmacenamiento = memoriaAlmacenamiento;
+	   this.procesador = procesador;
+	   this.modelo = modelo;
+	   this.añoFabricacion = añoFabricacion;
+	   this.precio = precio;
+	   this.stock = stock;
+   }
 	public String getMarca() {
 		return this.marca;
 	}

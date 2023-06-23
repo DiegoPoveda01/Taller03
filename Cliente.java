@@ -8,6 +8,15 @@ public class Cliente {
 	private String estadoCivil;
 	private String ciudad;
 	public Tienda tienda;
+	public Cliente(String nombre, String apellido, String email, String numero, String estadoCivil, String ciudad, Tienda tienda){
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+		this.numero = numero;
+		this.estadoCivil = estadoCivil;
+		this.ciudad = ciudad;
+		this.tienda = tienda;
+	}
 
 	public String getNombre() {
 		return this.nombre;

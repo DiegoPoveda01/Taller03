@@ -4,6 +4,10 @@ public class Pantalla {
 	private String marca;
 	private String modelo;
 	private int año;
+	public Pantalla (String marca, String modelo){
+		this.marca = marca;
+		this.modelo = modelo;
+	}
 
 	public String getMarca() {
 		return this.marca;

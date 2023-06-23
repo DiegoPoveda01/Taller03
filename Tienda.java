@@ -8,6 +8,10 @@ public class Tienda {
 	private String catalogo;
 	public ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 	public ArrayList<Dispositivo> dispositivos = new ArrayList<Dispositivo>();
+	public Tienda(String direccion, String catalogo){
+		this.direccion = direccion;
+		this.catalogo = catalogo;
+	}
 
 	public String getDireccion() {
 		return this.direccion;
