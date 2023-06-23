@@ -9,6 +9,7 @@ public abstract class Dispositivo {
 	protected String añoFabricacion;
 	protected String precio;
 	protected String stock;
+	protected String idDispositivo;
    public Dispositivo(String marca, String memoriaRam, String memoriaAlmacenamiento, String procesador, String modelo, String añoFabricacion, String precio, String stock){
 	   this.marca = marca;
 	   this.memoriaRam = memoriaRam;
@@ -84,4 +85,9 @@ public abstract class Dispositivo {
 	}
 
 	public abstract String getTipo();
+   public String getIdDispositivo(){ return this.idDispositivo; }
+
+	public void setIdDispositivo(String idDispositivo) {
+		this.idDispositivo = idDispositivo;
+	}
 }

@@ -28,6 +28,6 @@ public class Tablet extends Dispositivo {
 	}
 
 	public String getTipo() {
-		throw new UnsupportedOperationException();
+		return "Tablet";
 	}
 }

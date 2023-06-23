@@ -38,6 +38,6 @@ public class Computador extends Dispositivo {
 	}
 
 	public String getTipo() {
-		throw new UnsupportedOperationException();
+		return "Computador";
 	}
 }

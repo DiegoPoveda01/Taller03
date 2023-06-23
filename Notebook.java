@@ -37,6 +37,6 @@ public class Notebook extends Dispositivo {
 	}
 
 	public String getTipo() {
-		throw new UnsupportedOperationException();
+		return "Notebook";
 	}
 }
